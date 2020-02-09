@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+*{padding: 0;
+margin: 0;
+box-sizing: border-box;
+transition: 0.4s all;
+}
+body{
+    font-family: 'Lato', sans-serif;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: #341f97;
+}
+.welcome-text{
+    width: 400px;
+}
+.welcome-form input, .welcome-form button{
+    display: block;
+    width: 100%;
+}
+.welcome-form input:focus, .welcome-form button:focus{
+    outline: none;
+}
+.welcome-form input{
+    margin-bottom: 15px;
+    background: transparent;
+    border:none;
+    border-bottom:2px solid #fff;
+    color: #fff;
+    font-size:30px;
+    text-align: center;    
+}
+.welcome-form button{
+    padding: 20px 0;
+    background-color: #fff;
+    border:none;
+    border-radius: 100px;
+    color: #341f97;
+    font-size: 20px;
+}
+.welcome-form button:hover{
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+.quiz{
+    display: grid;
+    grid-template-rows: 60px auto;
+    width: 800px;
+    height: 500px;
+    background:#fff;border-radius: 3px;
+}
+.quiz-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    background-color: #fff;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    box-shadow: 0 2px 5px 1px rgba(0,0,0,0.3);
+    z-index: 1;
+}
+.quiz-user{
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+.quiz-timer{
+    display: flex;
+    height:60px;
+    align-items: center;
+    color: #fff;
+    background-color: #341f97;
+    padding: 0 30px;
+}
+.quiz-body{
+    background-color: #ecf0f1;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    padding: 30px;
+}
+.option-group{
+    list-style-type: none;
+    margin:30px 0;
+}
+.option{
+    background-color: #fff;
+    width: 300px;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 100px;
+    border:2px solid transparent;
+}
+.option:hover{
+    cursor: pointer;
+    border: 2px solid #341f97;
+    columns: #341f97;
+}
+.btn-next{
+    color: #fff;
+    background-color: #341f97;
+    border-radius: 27px;
+    padding: 15px 35px;
+    border:none;
+    outline: none;
+}
+.btn-next:hover{cursor: pointer;
+background-color: #fff;
+color: #341f97;
+box-shadow: 0 0 10px 1px rgba(0,0,0,0.3);}
+.active{background-color: #341f97;color: #fff;}
+.award_icon{
+    color: #fff;
+    font-size: 300px;
+}
+.user_name,
+.user_points{
+    color: #fff;
+    text-align: center;
+    margin-top: 15px;
+}
