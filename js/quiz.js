@@ -16,7 +16,7 @@ let category = [
         cat: "Web Design"
     }
     
-]
+];
 let questions = [
     {
         id: 1,
@@ -57,7 +57,7 @@ let questions = [
             "None of these"
         ]
     }
-]
+];
 //console.log(questions[0].cat);
 function submitForm(e) {
     e.preventDefault();
