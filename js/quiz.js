@@ -43,6 +43,8 @@ function next(){
         point+=10;
         //console.log("right Answer");
         sessionStorage.setItem("points", point)
+    }else{
+        point+=0
     }
     
     if(question_count == questions.length-1){
