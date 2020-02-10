@@ -42,9 +42,10 @@ function next(){
     if(user_answer == questions[question_count].answer){
         point+=10;
         //console.log("right Answer");
-        sessionStorage.setItem("points", point)
+        sessionStorage.setItem("points", point);
     }else{
-        point+=0
+        point+=0;
+        sessionStorage.setItem("points", point)
     }
     
     if(question_count == questions.length-1){
